@@ -1,0 +1,40 @@
+University Course Management
+Objective:
+Develop a Java program to manage university courses, instructors, and student enrollments.
+Class Hierarchy and Requirements:
+
+Person (Superclass):
+Instance Variables (private):
+name (String): The person's name.
+email (String): The person's email address.
+Constructor:
+Initializes name and email.
+Methods:
+toString(): Returns a string representation of the person's name and email.
+
+Instructor (Subclass of Person):
+Additional Instance Variable:
+department (String): The department to which the instructor belongs.
+Constructor:
+Calls the superclass constructor and initializes department.
+Method Overriding:
+Override toString(): Include instructor-specific details (department).
+
+Course (Class):
+Instance Variables:
+courseName (String): The name of the course.
+courseCode (String): The code of the course.
+instructor (Instructor): The instructor teaching the course.
+maxEnrollment (Integer): The maximum number of students that can enroll.
+currentEnrollment (Integer): The current number of enrolled students.
+Constructor:
+Initializes all instance variables.
+Methods:
+addStudent(): Increments currentEnrollment by 1 if maxEnrollment is not reached.
+toString(): Returns a string representation of the course details, including the instructor's name.
+
+Main Method Logic:
+Create an array to store Course objects.
+Add courses to the array, each with an instructor and course details.
+Loop through the array to display the details of each course.
+Simulate adding students to some courses and show updated enrollment numbers.

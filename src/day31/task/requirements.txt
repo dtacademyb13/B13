@@ -1,0 +1,27 @@
+Create a Java program that demonstrates the concept of method overriding and polymorphism.
+
+Your program should have a Vehicle class and three sub-classes that inherit from it - Car, Truck, and Motorcycle.
+Each of these sub-classes should override the drive() method of the Vehicle class.
+
+The Vehicle class should have the following encapsulated attributes:
+
+  make (String)
+  model (String)
+  year (int)
+  topSpeed (int)
+
+The Vehicle class should have all-args constructor, getters and setters.
+
+The Vehicle class should also have a drive() method that prints out a generic message about vehicle's top speed and a message saying that the vehicle is driving. ("The vehicle can drive up to 80 mph and is currently driving")
+
+The Car, Truck, and Motorcycle sub-classes should each have a unique attribute, such as numDoors, cargoCapacity, and hasSideCar, respectively. Add the all-args constructor, getters and setters.
+
+Each sub-class should override the drive method of the Vehicle class to print out the top speed and driving message as well as the unique attribute.
+
+Once all classes are implemented, in the Main class create an array of Vehicles with size 3 and add one instance of each sub-class. Iterate through the array and call the drive method on each array element.
+
+Example output:
+
+The 2021 Tesla Model S can drive up to 155 mph and is currently driving. This car has 4 doors.
+The 2021 Ford F-150 can drive up to 120 mph and is currently driving. This truck has a cargo capacity of 2000 lbs.
+The 2021 Harley-Davidson Sportster can drive up to 100 mph and is currently driving. This motorcycle has a sidecar.

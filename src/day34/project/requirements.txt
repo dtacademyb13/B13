@@ -1,0 +1,41 @@
+Healthcare Professionals Management
+
+Objective:
+Develop a Java program to manage different types of healthcare professionals. The program will allow management of diverse professional roles within a healthcare facility.
+
+Class Hierarchy and Requirements:
+
+HealthcareProfessional (Superclass):
+Instance Variables (private):
+name (String): The professional's name.
+yearsOfExperience (int): The number of years of professional experience.
+Constructor:
+Initializes name and yearsOfExperience.
+Methods:
+getDetails(): A method that returns a string representation of the professional's details.
+toString(): Calls getDetails() and returns its value.
+
+Doctor (Subclass of HealthcareProfessional):
+Additional Instance Variable:
+specialization (String): The doctor's area of specialization.
+Constructor:
+Calls the superclass constructor and initializes specialization.
+Method Overriding:
+Override getDetails(): Include doctor-specific details (name, experience, specialization).
+
+Nurse (Subclass of HealthcareProfessional):
+Additional Instance Variable:
+department (String): The department where the nurse works.
+Constructor:
+Calls the superclass constructor and initializes department.
+Method Overriding:
+Override getDetails(): Include nurse-specific details (name, experience, department).
+
+
+Technician (Subclass of HealthcareProfessional):
+Additional Instance Variable:
+equipmentHandled (List<String>): A list of medical equipment handled by the technician.
+Constructor:
+Calls the superclass constructor and initializes equipmentHandled.
+Method Overriding:
+Override getDetails(): Include technician-specific details (name, experience, equipment list).

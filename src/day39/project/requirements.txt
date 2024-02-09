@@ -1,0 +1,94 @@
+Task: Hospital Management System
+
+Description:
+Create a Hospital Management System in Java that utilizes the principles of Object-Oriented Programming (OOP),
+and incorporates List, Set, Queue, Stack, Map, and Comparator interfaces.
+The system will manage patients, doctors, appointments, and rooms in the hospital.
+
+Classes to be Implemented:
+
+Person:
+    Attributes:
+        String id
+        String name
+    Methods:
+        Constructor to initialize all attributes.
+        Getters for all attributes.
+        Override toString, equals and hashCode methods.
+
+Patient extends Person:
+
+    Attributes:
+        String ailment
+    Methods:
+        Constructor to initialize all attributes along with those from the superclass.
+        Getter for the ailment attribute.
+       Override toString, equals and hashCode methods.
+
+Doctor extends Person:
+
+    Attributes:
+        String specialization
+    Methods:
+        Constructor to initialize all attributes along with those from the superclass.
+        Getter for the specialization attribute.
+        Override toString, equals and hashCode methods.
+
+Appointment:
+
+    Attributes:
+        Patient patient
+        Doctor doctor
+        String appointmentTime
+    Methods:
+        Constructor to initialize all attributes.
+        Getters for all attributes.
+        Override toString.
+
+Hospital:
+
+    Attributes:
+        Set<Doctor> doctors - To hold all the doctors.
+        Set<Patient> patients - To hold all the patients.
+        List<Appointment> appointments - To manage appointments.
+        Queue<Patient> emergencyQueue - To manage emergency cases.
+        Stack<String> roomStack - To manage hospital room allocations.
+        Map<String, String> roomAllocationMap - To map patient ID to room number.
+
+    Constructor:
+       Adds 10 rooms to the hospital(roomstack)
+    Methods:
+        addDoctor(Doctor doctor): Add a doctor to the hospital.
+        addPatient(Patient patient): Add a patient to the hospital.
+        scheduleAppointment(Appointment c): Schedule an appointment.
+        attendEmergency(Patient patient): Add a patient to the emergency queue.
+        allocateRoom(Patient patient): Allocate a room to a patient.
+        releaseRoom(String patientId): Release a room allocated to a patient.
+        viewDoctors(): View all doctors.
+        viewPatients(): View all patients.
+        viewAppointments(): View all appointments.
+        viewEmergencyQueue(): View all patients in the emergency queue.
+        viewRoomAllocations(): View all room allocations.
+
+
+
+Tasks:
+
+Implement all the classes and methods as described above.
+In each method of the Hospital class, ensure that appropriate checks are performed before adding to a collection, scheduling appointments, allocating rooms, etc.
+Sort doctors by specialization when displaying them using the DoctorSpecializationComparator.
+In the Main class, demonstrate all functionalities:
+// Creating a hospital
+// Creating and adding doctors
+// Viewing the list of doctors
+// Creating and adding patients
+// Viewing the list of patients
+// Scheduling appointments
+// Viewing the list of appointments
+// Attending to emergency
+// Viewing the emergency queue
+// Allocating and releasing rooms
+// Viewing the room allocations
+// Releasing rooms
+// Viewing the room allocations after releasing rooms
+// Sorting doctors based on their specialization.

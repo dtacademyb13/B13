@@ -1,0 +1,4 @@
+Encapsulation - data hiding. Making the class variables private and providing public getter/setters
+Inheritance - creating IS-A relationship between classes where a subclass inherits all available methods and fields from a super class.
+Polymorphism - creating an ability for an object to take many forms. It is created by assigning a subclass object to a superclass reference.
+Abstraction - hiding implementation details and showing only what is necessary. It is implemented in 2 ways: Abstract classes and Interfaces
